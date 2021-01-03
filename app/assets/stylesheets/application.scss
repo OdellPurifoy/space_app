@@ -14,3 +14,25 @@
  *= require_self
  */
 @import "bootstrap";
+
+html,
+body {
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('bg.jpg');
+  height: 100vh;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background-color: inherit !important;
+}
+
+.form-control.mr-sm-2 {
+  border-radius: 0px;
+}
+
+.btn {
+  border-radius: 0px;
+  background-color: #084298;
+  color: white;
+}
