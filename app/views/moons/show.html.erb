@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Moon name:</strong>
+  <%= @moon.moon_name %>
+</p>
+
+<p>
+  <strong>Moon surface type:</strong>
+  <%= @moon.moon_surface_type %>
+</p>
+
+<p>
+  <strong>Moon surface temperature:</strong>
+  <%= @moon.moon_surface_temperature %>
+</p>
+
+<p>
+  <strong>Planet:</strong>
+  <%= @moon.planet_id %>
+</p>
+
+<%= link_to 'Edit', edit_moon_path(@moon) %> |
+<%= link_to 'Back', moons_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Planet name:</strong>
+  <%= @planet.planet_name %>
+</p>
+
+<p>
+  <strong>Planet type:</strong>
+  <%= @planet.planet_type %>
+</p>
+
+<p>
+  <strong>Surface temperature:</strong>
+  <%= @planet.surface_temperature %>
+</p>
+
+<p>
+  <strong>Core type:</strong>
+  <%= @planet.core_type %>
+</p>
+
+<%= link_to 'Edit', edit_planet_path(@planet) %> |
+<%= link_to 'Back', planets_path %>
