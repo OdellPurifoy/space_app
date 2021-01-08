@@ -1,16 +1,19 @@
+# frozen_string_literal: true
+
 class PlanetsController < ApplicationController
-  before_action :set_planet, only: [:show, :edit, :update, :destroy]
+  before_action :set_planet, only: %i[show edit update destroy]
 
   # GET /planets
   # GET /planets.json
   def index
     @planets = Planet.all
+    @nasa_info = NasaApi.get_api_info
+    @media_type_is_video = @nasa_info['media_type'].eql?('video')
   end
 
   # GET /planets/1
   # GET /planets/1.json
-  def show
-  end
+  def show; end
 
   # GET /planets/new
   def new
@@ -18,8 +21,7 @@ class PlanetsController < ApplicationController
   end
 
   # GET /planets/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /planets
   # POST /planets.json
@@ -62,13 +64,15 @@ class PlanetsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_planet
-      @planet = Planet.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def planet_params
-      params.require(:planet).permit(:planet_name, :planet_type, :surface_temperature, :core_type)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_planet
+    @planet = Planet.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def planet_params
+    params.require(:planet).permit(:planet_name, :planet_type, :surface_temperature, :core_type, images: [],
+    :cover_image)
+  end
 end

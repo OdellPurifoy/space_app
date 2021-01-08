@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'nasa_picture/index'
   resources :moons
   resources :planets
   devise_for :users

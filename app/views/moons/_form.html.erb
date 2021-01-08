@@ -27,6 +27,16 @@
   </div>
 
   <div class="field">
+    <%= form.label :moon_cover_image %>
+    <%= form.file_field :moon_cover_image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :moon_images %>
+    <%= form.file_field :moon_images, multiple: true %>
+  </div>
+
+  <div class="field">
     <%= form.label :planet_id %>
     <%= form.text_field :planet_id %>
   </div>
