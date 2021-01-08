@@ -1,0 +1,41 @@
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+      <div class="col-md-8">
+      <hr>
+      <div class="profile-card-6"><%= image_tag(@nasa_info["url"], size: "730x500", class: "img img-responsive" ) %>
+          <div class="profile-name"><%= @nasa_info["title"] %>
+              <br></div>
+          <div class="profile-position"></div>
+      </div>
+      </div>
+
+      <div class="col-6 col-md-4">
+      <hr>
+      <div class="profile-card-6"><%= image_tag(@nasa_info["url"], size: "400x500", class: "img img-responsive" ) %>
+          <div class="profile-name"><%= @nasa_info["title"] %>
+              <br></div>
+          <div class="profile-position"></div>
+      </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="container">
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
+
+      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+      <div class="row">
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
+
+      <!-- Columns are always 50% wide, on mobile and desktop -->
+      <div class="row">
+        <div class="col-6">.col-6</div>
+        <div class="col-6">.col-6</div>
+      </div>

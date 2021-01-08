@@ -33,6 +33,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
   gem 'rspec-rails', '~> 4.0', '>= 4.0.2'
 end
 
@@ -58,5 +59,6 @@ end
 gem 'bootstrap', '~> 4.5', '>= 4.5.3'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'faker', '~> 2.15', '>= 2.15.1'
+gem 'font_awesome5_rails', '~> 1.3'
 gem 'jquery-rails', '~> 4.4'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
