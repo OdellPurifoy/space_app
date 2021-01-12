@@ -4,6 +4,6 @@
 <% if @media_type_is_video %>
   <%= video_tag(@nasa_info["url"], autoplay: :autoplay, loop: :loop) %>
 <% else %>
-<  img src="<%= @nasa_info["url"] %>" />
+<img src="<%= @nasa_info["url"] %>" />
 <% end %><p><%= @nasa_info["explanation"] %></p>
 <p><%= @nasa_info["date"] %></p>

@@ -18,9 +18,9 @@
 
 html,
 body {
-  background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url('bg.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('bg.jpg');
   height: 100vh;
-  color: #fff;
+  color: #000000;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -38,73 +38,67 @@ body {
   color: white;
 }
 
-.profile-card-6 {
-    max-width: auto;
-    background-color: #FFF;
-    border-radius: 5px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+.title {
+
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.card-block {
+    font-size: 1em;
     position: relative;
-    margin: 10px auto;
-    cursor: pointer;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+
 }
 
-.profile-card-6 img {
-    transition: all 0.15s linear;
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 5;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    margin-top:20px;
 }
 
-.profile-card-6 .profile-name {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #FFF;
-    padding: 15px 20px;
-    background: linear-gradient(140deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0) 50%);
-    transition: all 0.15s linear;
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
 }
 
-.profile-card-6 .profile-position {
-    position: absolute;
-    color: rgba(255, 255, 255, 0.4);
-    left: 30px;
-    top: 100px;
-    transition: all 0.15s linear;
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
 }
 
-.profile-card-6 .profile-overview {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0));
-    color: #FFF;
-    padding: 50px 0px 20px 0px;
-    transition: all 0.15s linear;
+.carousel-indicators .active {
+    background-color: white;
+    max-width: 12px;
+    margin: 0 3px;
+    height: 12px;
 }
 
-.profile-card-6 .profile-overview h3 {
-    font-weight: bold;
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
 
-.profile-card-6 .profile-overview p {
-    color: rgba(255, 255, 255, 0.7);
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
-.profile-card-6:hover img {
-    filter: brightness(80%);
+.btn {
+  margin-top: auto;
+  color: white;
 }
 
-.profile-card-6:hover .profile-name {
-    padding-left: 25px;
-    padding-top: 20px;
-}
-
-.profile-card-6:hover .profile-position {
-    left: 40px;
-}
-
-.profile-card-6:hover .profile-overview {
-    padding-bottom: 25px;
+.btn.btn-sm {
+  color: white;
 }

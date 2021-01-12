@@ -1,35 +1,3 @@
 <p id="notice"><%= notice %></p>
 
 <%= render 'shared/nasa_photo' %>
-
-<h1>Planets</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Planet name</th>
-      <th>Planet type</th>
-      <th>Surface temperature</th>
-      <th>Core type</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @planets.each do |planet| %>
-      <tr>
-        <td><%= planet.planet_name %></td>
-        <td><%= planet.planet_type %></td>
-        <td><%= planet.surface_temperature %></td>
-        <td><%= planet.core_type %></td>
-        <td><%= link_to 'Show', planet %></td>
-        <td><%= link_to 'Edit', edit_planet_path(planet) %></td>
-        <td><%= link_to 'Destroy', planet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Planet', new_planet_path %>
